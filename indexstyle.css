@@ -1,0 +1,510 @@
+/* Applies general styling to the entire body */
+body {
+    flex: 0 0 30%; /* Sets flex properties */
+    margin: 0; /* Resets margin */
+    font-family: Arial, sans-serif; /* Sets font family */
+    height: fit-content; /* Adjusts height based on content */
+    width: fit-content; /* Adjusts width based on content */
+    background-color: #3E2D29; /* Sets background color */
+}
+
+/* Applies styling to the sections */
+section {
+    height: 100vh; /* Sets height to full viewport height */
+}
+
+/* Styling for bold text */
+b {
+    font-family: 'Times New Roman', Times, serif; /* Sets font family */
+    color: rgb(255, 255, 255); /* Sets text color */
+    font-size: 200%; /* Sets font size */
+    text-size-adjust: 10%; /* Adjusts text size */
+}
+
+/* Styling for heading 1 */
+h1 {
+    font-family: 'Times New Roman', Times, serif; /* Sets font family */
+    color: #ecdcdc; /* Sets text color */
+    font-size: 200%; /* Sets font size */
+    text-align: center; /* Centers text */
+    width: 100%; /* Sets width */
+    padding-bottom: 0px; /* Resets bottom padding */
+    padding-top: 0%;
+    margin:0%;
+    margin-top: 15px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif; /* Sets font family */
+    color: #ecdcdc; /* Sets text color */
+    font-size: 200%; /* Sets font size */
+    text-align: center; /* Centers text */
+    width: 100%; /* Sets width */
+    padding-bottom: 0px; /* Resets bottom padding */
+    padding-top: 0%;
+    margin:0%;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between; /* Spacing between left and right sections */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    position: sticky;
+    z-index: 1200px;
+    top: 0;
+    width: 97.70%;
+    height:50px;
+    background-color: #251a18;
+}
+
+/* Styling for logo */
+.logo {
+    color: #fff; /* Sets text color */
+    font-size: 100%; /* Sets font size */
+    text-size-adjust: 10%; /* Adjusts text size */
+    margin-right: auto; /* Aligns logo to the left */
+    padding-top: 0%; /* Adds top padding */
+
+}
+
+/* Styling for anchor tags */
+a.logo {
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styling for left and right icons */
+.left-icons, .right-icons {
+    display: flex; /* Uses flexbox layout */
+    list-style: none; /* Removes default list style */
+    padding: 0; /* Resets padding */
+    padding-top: 10%; /* Adds top padding */
+    margin: 0; /* Resets margin */
+    font-size: large; /* Sets font size */
+}
+
+.left-icons {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-right: 0%; /* Aligns icons to the right */
+    justify-content: left;
+    transform: translate(-1%, -35%);
+}
+
+/* Styling for left icons */
+.left-icons ul {
+    display: flex;
+    margin-left: auto; /* Pushes the list items to the right */
+}
+
+.left-icons ul li {
+    margin-right: 20px; /* Spacing between menu items */
+    display: flex; /* Uses flexbox layout */
+    margin-top: 0px; /* Adds right margin */
+}
+
+.right-icons {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Aligns icons to the left */
+    padding-top: 10%; /* Adds top padding */
+    padding-right: 10px; /* Adjust padding to align with search bar */
+    transform: translate(1%, -10%);
+}
+
+.right-icons li {
+    display: flex; /* Uses flexbox layout */
+    margin-left: 5px; /* Adds left margin */
+    font-size: large; /* Sets font size */
+    align-items: center; /* Aligns items vertically */
+    font-size: large; /* Sets font size */
+}
+
+/* Styling for font awesome icons within right icons */
+.right-icons li a i {
+    color: white; /* Sets text color */
+    text-decoration: none; /* Removes underline */
+    margin-right: 10px; /* Adds right margin between icons */
+}
+
+/* Styling for anchor tags */
+a {
+    text-decoration: none; /* Removes underline */
+}
+
+.fas {
+    color: white; /* Sets text color */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Additional margin for message icon */
+.message-icon {
+    margin-right: 8px; /* Adjust as needed */
+}
+
+/* Styling for box1 */
+.box1 {
+    display: flex; /* Uses flexbox layout */
+    width: 100%; /* Sets width */
+    height: 100%; /* Sets height */
+}
+
+/* Styling for box1 image */
+.box1 img {
+    width: 209%; /* Sets width to 100% */
+    height: 100%; /* Sets height to auto */
+}
+
+/* Styling for box2 image */
+.box2 {
+    display: flex; /* Uses flexbox layout */
+    width: 100%; /* Sets width */
+    height: 100%; /* Sets height */
+}
+
+/* Styling for box1 image */
+.box2 img {
+    width: 100%; /* Sets width to 100% */
+    height: auto; /* Sets height to auto */
+}
+
+/* Styling for text overlay */
+.text-overlay {
+    position: absolute; /* Sets position to absolute */
+    top: 60%; /* Sets top position */
+    left: 50%; /* Sets left position */
+    width: 100%; /* Sets width */
+    text-align: left; /* Centers text horizontally */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Sets font family */
+    transform: translate(-50%, -50%); /* Transforms position */
+    color: #3E2D29; /* Sets text color */
+    padding: 0px; /* Resets padding */
+    font-size: 200%; /* Sets font size */
+}
+
+.text-overlay p{
+    text-align: left;
+    padding-left: 50px;
+    font-size: 100%;
+    margin: 10px;
+    color: #f0eae9;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+/* Styling for paragraphs */
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Sets font family */
+    color: #ecdcdc; /* Sets text color */
+    font-size: 15px; /* Sets font size */
+    text-align: center; /* Centers text horizontally */
+    line-height: 22px; /* Sets line height */
+    margin-bottom: 18px; /* Adds bottom margin */
+    margin: 0; /* Resets margin */
+    width: 100%; /* Sets width */
+    padding: 0%; /* Resets padding */
+}
+.shop-now-btn:hover {
+    background-color: #7a3b2b;
+    left: 130px;
+}
+
+.shop-now-btn i {
+    margin-left:5px;
+}
+.text-overlay a{
+    position: absolute;
+    font-size: 20px;
+    background-color: #352724;
+    color: #fff;
+    left: 130px;
+    top: 170px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Styling for product list */
+.product-list {
+    display: flex; /* Uses flexbox layout */
+    overflow: auto; /* Adds overflow scrolling */
+    flex-wrap: nowrap; /* Prevents wrapping */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+    direction: ltr; /* Sets direction to left-to-right */
+    justify-content: space-between; /* Spaces items evenly */
+    background-color: transparent; /* Sets background color */
+    width: 100%; /* Sets width */
+    padding-bottom: 0%; /* Resets bottom padding */
+    position: relative; /* Sets position to relative */
+    height: 100%; /* Sets height to 100% */
+}
+
+/* Styling for scrollbar */
+.product-list::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+}
+
+/* Styling for product list before and after */
+.product-list::before,
+.product-list::after {
+    content: ""; /* Adds content */
+    position: absolute; /* Sets position to absolute */
+    width: 0px; /* Sets width */
+    height: 30px; /* Sets height */
+    background-color: rgba(0, 0, 0, 0.5); /* Sets background color */
+    bottom: 0; /* Sets position to bottom */
+    z-index: 1; /* Sets z-index */
+}
+
+/* Styling for product list before */
+.product-list::before {
+    left: 0; /* Aligns to left */
+}
+
+/* Styling for product list after */
+.product-list::after {
+    right: 0; /* Aligns to right */
+}
+
+/* Styling for products */
+.product {
+    flex: 0 0 auto; /* Sets flex properties */
+    width: 30%; /* Sets width */
+    height: auto; /* Sets height to auto */
+    background-color: transparent; /* Sets background color */
+    margin: 20px; /* Adds margin */
+    padding: 0px; /* Resets padding */
+    border-radius: 0px; /* Resets border radius */
+}
+
+/* Styling for product images */
+.product img {
+    width: 100%; /* Sets width to 100% */
+    height: 80%; /* Sets height to 80% */
+    border-radius: 0; /* Resets border radius */
+    padding-right: 0; /* Resets right padding */
+}
+
+.product-info p{
+    text-align: left;
+    width: 100%;
+    background-color: #251a18;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    display: inline-block;
+    padding: 5px 10px;
+    width: 45%;
+    background-color: #251a18;
+    color: #fff;
+    text-decoration: none;
+}
+
+.product-info a{
+    text-align: center;
+}
+.add-to-cart:hover{
+    background-color:#483734;
+}
+.buy-now {
+    display: inline-block;
+    padding: 5px 10px;
+    width: 45%;
+    background-color: #251a18;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translate(102%, -100.5%);
+}
+
+.actions a{
+    text-align: center;
+    transform: translate(102%, -100.5%);
+}
+.buy-now:hover{
+    background-color:#483734;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .left-icons, .right-icons {
+        flex-direction: column; /* Changes direction to column */
+        align-items: center; /* Centers items vertically */
+    }
+}
+
+/* Styling for product headings */
+.product h2 {
+    font-family: 'Times New Roman'; /* Sets font family */
+    margin-top: 15px; /* Adds top margin */
+    margin-bottom: 10px; /* Adds bottom margin */
+    color: #ecdcdc; /* Sets text color */
+    text-align: center; /* Centers text horizontally */
+}
+
+/* Styling for product paragraphs */
+.product p {
+    margin: 5px 0; /* Adds margin */
+    color: #ecdcdc; /* Sets text color */
+    text-align: center; /* Centers text horizontally */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .product {
+        flex: 0 0 100%; /* Sets width to 100% */
+    }
+}
+
+/* Styling for product buttons */
+.product button {
+    background-color: #bb877a; /* Sets background color */
+    color: #fff; /* Sets text color */
+    border: none; /* Removes border */
+    padding: 10px 20px; /* Adds padding */
+    border-radius: 5px; /* Adds border radius */
+    cursor: pointer; /* Sets cursor to pointer */
+}
+
+/* Styling for product button hover */
+.product button:hover {
+    background-color: #7a3b2b; /* Changes background color on hover */
+}
+
+/* Styling for discover button */
+.discover-button {
+    display: inline-block; /* Displays as inline-block */
+    padding: 10px 20px; /* Adds padding */
+    background-color: #bb877a; /* Sets background color */
+    color: #fff; /* Sets text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 0px; /* Resets border radius */
+    transition: background-color 0.3s ease; /* Adds transition effect */
+}
+
+/* Styling for discover button hover */
+.discover-button:hover {
+    background-color: #715852; /* Changes background color on hover */
+}
+
+/* Styling for center-aligned text */
+.center-text {
+    text-align: center; /* Centers text horizontally */
+    padding: 0%; /* Resets padding */
+    margin-top: 0%; /* Resets top margin */
+}
+
+/* Styling for new arrivals section */
+.new-arivals {
+    position: absolute; /* Sets position to absolute */
+    bottom: -200%; /* Moves element below the screen */
+    left: 50%; /* Sets left position */
+    width: 100%; /* Sets width */
+    text-align: center; /* Centers text horizontally */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Sets font family */
+    transform: translate(-50%, -50%); /* Transforms position */
+    color: black; /* Sets text color */
+    padding: 0px; /* Resets padding */
+    font-size: 500%; /* Sets font size */
+}
+
+/* Styling for heading 3 */
+h3 {
+    color: #ecdcdc; /* Sets text color */
+}
+
+/* Container styling */
+/* Container styling */
+.container2 {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.box2 {
+    margin: 0 10px; /* Adjust the margin as needed */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2 p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #352724;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+/* Image styling */
+.box2 img {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.text-bottom-center{
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+
+.container3 {
+    display: flex;
+    height: 220px;
+    width: 99.43%;
+    background-color: #251a18;
+}
+
+.box3 {
+    flex: 1; /* Sets flex properties */
+    padding-bottom: 10px; /* Adds bottom padding */
+    margin: 0px; /* Resets margin */
+    text-align: center; /* Centers text horizontally */
+}
+ 
+.box3 h3 {
+    font-size:larger;
+}
+
+.box3 p {
+    color: #ecdcdc8b;
+}
+
+.social-icons {
+    flex: 1; /* Sets flex properties */
+    padding-bottom: 50px; /* Adds bottom padding */
+    margin: 0px; /* Resets margin */
+    text-align: center; /* Centers text horizontally */
+}
+
+.social-icons a i {
+    color: rgba(240, 230, 230, 0.507);
+}
+
+footer{
+    display: flex;
+    border-top: 1px solid #ffffff27;
+    text-align: left;
+    transform: translate(5px, 2%);
+    height: auto;
+}
+footer p{
+  padding: 0px; 
+  text-align: left;
+  color: #ffffff27;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+}

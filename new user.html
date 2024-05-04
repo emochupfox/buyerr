@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>New User</title> 
+    <link rel="stylesheet" href="new user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head> 
+
+<body> 
+
+	<header> 
+
+		<div class="logosec"> 
+			<div class="logo">U & A's Shop</div>
+			<a href="#" class="dashboard-link">New User</a>
+		</div>
+
+		<div class="message"> 
+			<div class="circle"></div> 
+			<a href=" " title="Notification"><i class="fas fa-bell" style="color: black;"></i></a>
+
+			<div class="dp"> 
+				<a href=" " title="Profile"><i class="fas fa-user" style="color: black;"></i></a>
+			</div> 
+		</div> 
+
+	</header> 
+
+	<div class="main-container"> 
+		<div class="navcontainer"> 
+			<nav class="nav">
+				<div class="nav-upper-options"> 
+					<div class="nav-option option1"> 
+						<a href="admin.html">
+						<i class="fas fa-tachometer-alt"></i>
+						<h3> Dashboard</h3>
+						</a> 
+					</div> 
+
+					<div class="option2 nav-option">
+						<a href="avp.html">
+						<i class="fas fa-shopping-bag"></i>
+						<h3> Available Products </h3> 
+						</a>
+					</div> 
+
+					<div class="nav-option option3"> 
+						<a href="inquiries.html">
+						<i class="fas fa-envelope"></i>
+						<h3> Enquiries</h3> 
+						</a>
+					</div> 
+
+					<div class="nav-option option7">
+						<a href="orders.html">
+							<i class="fas fa-shopping-basket"></i>
+							<h3>Orders</h3>
+						</a>
+					</div>
+
+					<div class="nav-option option5"> 
+						<a href="reports.html">
+						<i class="fas fa-chart-line"></i>
+						</a>
+						<h3> Reports</h3> 
+					</div> 
+
+					<div class="nav-option option6"> 
+						<a href="new user.html">
+						<i class="fas fa-user-plus"></i>
+						<h3> New User </h3> 
+						</a>
+					</div> 
+
+				</div> 
+			</nav> 
+		</div> 
+		<div class="main">
+
+            <div class="report-container">
+
+                <div class="user-management">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- User 1 -->
+                            <tr>
+                                <td>JohnDoe</td>
+                                <td>john@example.com</td>
+                                <td>Admin</td>
+                                <td>Active</td>
+                                <td>
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="suspend-btn">Suspend</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                            <!-- User 2 (New User) -->
+                            <tr>
+                                <td>JaneSmith</td>
+                                <td>jane@example.com</td>
+                                <td>User</td>
+                                <td>Pending</td>
+                                <td>
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="approve-btn">Approve</button>
+                                    <button class="reject-btn">Reject</button>
+                                </td>
+                            </tr>
+                            <!-- Additional user rows -->
+                            <tr>
+                                <td>AishaKhan</td>
+                                <td>aisha@example.com</td>
+                                <td>User</td>
+                                <td>Active</td>
+                                <td>
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="suspend-btn">Suspend</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FatimaAli</td>
+                                <td>fatima@example.com</td>
+                                <td>User</td>
+                                <td>Pending</td>
+                                <td>
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="approve-btn">Approve</button>
+                                    <button class="reject-btn">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MariamAhmed</td>
+                                <td>mariam@example.com</td>
+                                <td>Admin</td>
+                                <td>Active</td>
+                                <td>
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="suspend-btn">Suspend</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Pagination or Infinite Scroll -->
+                    <div class="pagination">
+                        <!-- Page navigation controls -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body> 
+</html>
+

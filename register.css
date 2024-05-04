@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #3E2D29; /* Nude pink */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #3E2D29;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(246, 246, 246);
+}
+
+header h1 {
+    text-align: center;
+    color: #ffffff; /* Darker pink */
+}
+
+main form {
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group h2 {
+    color: #ffffff; /* Darker pink */
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e8e1df; /* Darker pink */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group input[type="submit"] {
+    background-color: #74493e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(246, 246, 246);
+}
+
+.button-group input[type="submit"]:hover {
+    background-color: #3E2D29; /* Darker pink on hover */
+    box-shadow: 0 0 10px rgb(246, 246, 246);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #bb877a; /* Darker pink */
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

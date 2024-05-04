@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>Reports</title> 
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="reports.js"></script>
+</head> 
+
+<body> 
+
+	<header> 
+
+		<div class="logosec"> 
+			<div class="logo">U & A's Shop</div>
+			<a href="#" class="dashboard-link">Reports</a>
+		</div>
+
+		<div class="message"> 
+			<div class="circle"></div> 
+			<a href=" " title="Notification"><i class="fas fa-bell" style="color: black;"></i></a>
+
+			<div class="dp"> 
+				<a href=" " title="Profile"><i class="fas fa-user" style="color: black;"></i></a>
+			</div> 
+		</div> 
+
+	</header> 
+
+	<div class="main-container"> 
+		<div class="navcontainer"> 
+			<nav class="nav">
+				<div class="nav-upper-options"> 
+					<div class="nav-option option1"> 
+						<a href="admin.html">
+						<i class="fas fa-tachometer-alt"></i>
+						<h3> Dashboard</h3>
+						</a> 
+					</div> 
+
+					<div class="option2 nav-option">
+						<a href="avp.html">
+						<i class="fas fa-shopping-bag"></i>
+						<h3> Available Products </h3> 
+						</a>
+					</div> 
+					<div class="nav-option option7">
+						<a href="orders.html">
+							<i class="fas fa-shopping-basket"></i>
+							<h3>Orders</h3>
+						</a>
+					</div>
+					<div class="nav-option option3"> 
+						<a href="inquiries.html">
+						<i class="fas fa-envelope"></i>
+						<h3> Enquiries</h3> 
+						</a>
+					</div> 
+
+					<div class="nav-option option5"> 
+						<a href="reports.html">
+						<i class="fas fa-chart-line"></i>
+						</a>
+						<h3> Reports</h3> 
+					</div> 
+
+					<div class="nav-option option6"> 
+						<a href="new user.html">
+						<i class="fas fa-user-plus"></i>
+						<h3> New User </h3> 
+						</a>
+					</div> 
+				</div> 
+			</nav> 
+		</div> 
+		<div class="main"> 
+			<div class="report-container">
+				<div class="report-header">
+					<h1 class="recent-Articles">Monthly Sales Performance Report</h1>				
+				</div>
+				<div class="report-body">
+					<div class="item">
+						<div class="t-op">Executive Summary</div>
+						<p>Overview of sales performance and key findings.</p>
+					</div><canvas id="executiveSummaryChart" width="800" height="400"></canvas>
+					<div class="item">
+						<div class="t-op">Sales Analysis</div>
+						<p>Total revenue, top-selling products, and geographical sales distribution.</p>
+						<canvas id="salesChart" width="800" height="400"></canvas>
+					</div>
+					<div class="item">
+						<div class="t-op">User Engagement Metrics</div>
+						<p>Session duration, bounce rate, and conversion rates.</p>
+						<canvas id="userEngagementChart" width="400" height="200"></canvas>
+					</div>
+					<div class="item">
+						<div class="t-op">Product Insights</div>
+						<p>New product launches, inventory turnover, and popular product categories.</p>
+						<canvas id="productInsightsChart" width="400" height="200"></canvas>
+					</div>
+					<div class="item">
+						<div class="t-op">Marketing Campaign Performance</div>
+						<p>ROI of recent marketing campaigns and customer acquisition channels.</p>
+						<canvas id="campaignPerformanceChart" width="400" height="200"></canvas>
+					</div>
+					<div class="item">
+						<div class="t-op">Customer Satisfaction Metrics</div>
+						<p>Customer feedback summary and areas for improvement.</p>
+						<canvas id="satisfactionMetricsChart" width="400" height="200"></canvas>
+					</div>
+				</div>
+			</div>
+							
+</body> 
+</html>
+

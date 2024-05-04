@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Hijab</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buy Hijab</h1>
+        <form id="hijabForm" onsubmit="return false;">
+            <div class="form-group">
+                <label for="hijabType">Select Hijab Type:</label>
+                <select id="hijabType">
+                    <option value="satin">Satin Hijab</option>
+                    <option value="cotton">Cotton Hijab</option>
+                    <option value="chiffon">Chiffon Hijab</option>
+                    <option value="jersey">Jersey Hijab</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hijabColor">Select Color:</label>
+                <select id="hijabColor">
+                    <option value="pink">Pink</option>
+                    <option value="beige">Beige</option>
+                    <option value="ivory">Ivory</option>
+                    <option value="mauve">Mauve</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Select Payment Method:</label>
+                <select id="paymentMethod">
+                    <option value="cod">Cash on Delivery (COD)</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+            <button onclick="buyHijab()">Buy Now</button>
+            <button onclick="buyHijab()">Add to Cart</button>
+            <button><a href="message.html">Message</button></a>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

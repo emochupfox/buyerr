@@ -1,0 +1,387 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>- U & A's Shop -</title> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="admin.css"> 
+	<link rel="stylesheet" href="admin2.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="admin.js"></script>
+</head> 
+
+<body> 
+
+	<header> 
+
+		<div class="logosec"> 
+			<div class="logo">U & A's Shop</div>
+			<a href="#" class="dashboard-link">Dashboard</a>
+		</div>
+	
+		<div class="message"> 
+			<div class="circle"></div> 
+			<a href=" " title="Notification"><i class="fas fa-bell" style="color: black;"></i>
+				<div class="logout-btn">Notification</div></a>
+
+				<div class="notification-icon" id="notificationIcon">
+					<!-- Notification icon (e.g., bell icon) -->
+					<i class="fas fa-bell"></i>
+					<!-- Notification count badge -->
+					<span class="badge">3</span>
+					<!-- Notification dropdown -->
+					<div class="notification-dropdown" id="notificationDropdown">
+						<!-- Notification items go here -->
+						<div class="notification-item">
+							<p>Sitti Ismael posted a new product.</p>
+							<span>2 hours ago</span>
+						</div>
+						<div class="notification-item">
+							<p>Jane Smith has an enquiries.</p>
+							<span>1 day ago</span>
+						</div>
+						<!-- Additional notification items go here -->
+					</div>
+				</div>							
+
+			<div class="dp">
+				<a href="#" title="Profile" class="profile-link">
+					<i class="fas fa-user" style="color: black;"></i>
+					<div class="logout-btn">Logout</div>
+				</a>
+			</div>
+						 
+		</div> 
+
+	</header> 
+
+	<div class="main-container"> 
+		<div class="navcontainer"> 
+			<nav class="nav">
+				<div class="nav-upper-options"> 
+					<div class="nav-option option1"> 
+						<a href="admin.html">
+						<i class="fas fa-tachometer-alt"></i>
+						<h3> Dashboard</h3>
+						</a> 
+					</div> 
+
+					<div class="nav-option option2">
+						<a href="avp.html">
+						<i class="fas fa-shopping-bag"></i>
+						<h3> Available Products </h3> 
+						<span class="notification-indicator"></span>
+						</a>
+					</div> 
+
+					<div class="nav-option option7">
+						<a href="orders.html">
+							<i class="fas fa-shopping-basket"></i>
+							<h3>Orders</h3>
+						</a>
+					</div>
+
+					<div class="nav-option option3"> 
+						<a href="inquiries.html">
+						<i class="fas fa-envelope"></i>
+						<h3> Enquiries</h3> 
+						</a>
+					</div>  
+
+					<div class="nav-option option5"> 
+						<a href="reports.html">
+						<i class="fas fa-chart-line"></i>
+						</a>
+						<h3> Reports</h3> 
+					</div> 
+
+					<div class="nav-option option6"> 
+						<a href="new user.html">
+						<i class="fas fa-user-plus"></i>
+						<h3> New User </h3> 
+						</a>
+					</div> 
+				</div> 
+			</nav> 
+		</div> 
+		<div class="main"> 
+			<div class="searchbar2"> 
+				<input type="text"
+					name=""
+					id=""
+					placeholder="Search"> 
+				<div class="searchbtn"> 
+					<li><a href="#" title="Search here"><i class="fas fa-search"></i></a></li>
+						class="icn srchicn"
+						alt="search-button"> 
+				</div> 
+			</div> 
+
+			<div class="box-container"> 
+
+				<div class="box box1"> 
+					<div class="text"> 
+						<h2 class="topic-heading">2000</h2> 
+						<h2 class="topic">Sales</h2> 
+					</div> 
+
+					<i class="fas fa-chart-line"></i>
+				</div> 
+
+				<div class="box box2"> 
+					<div class="text"> 
+						<h2 class="topic-heading">15000</h2> 
+						<h2 class="topic">Orders</h2> 
+					</div> 
+
+					<i class="fas fa-shopping-cart"></i>
+				</div> 
+
+				<div class="box box3"> 
+					<div class="text"> 
+						<h2 class="topic-heading">20500</h2> 
+						<h2 class="topic">Products</h2> 
+					</div> 
+
+					<i class="fas fa-box-open"></i>
+				</div> 
+
+				<div class="box box4"> 
+					<div class="text"> 
+						<h2 class="topic-heading">5500</h2> 
+						<h2 class="topic">Customers</h2> 
+					</div> 
+
+					<i class="fas fa-users"></i>
+				</div> 
+			</div>
+			<div class="graph-container">
+				<canvas id="salesChart" width="800" height="400"></canvas>
+				</div>
+			<div class="orders-container">
+			<div class="report-container"> 
+				<div class="report-header"> 
+					<h1 class="recent-Articles">Recent Orders</h1> 
+				</div>		
+				<div class="report-body">
+					<table>
+					  <thead>
+						<tr class="report-topic-heading">
+						  <th>Date</th>
+						  <th>Customer</th>
+						  <th>Product</th>
+						  <th>Details</th>
+						  <th>Price</th>
+						  <th>Shipping Cost</th>
+						  <th>Action</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr class="item1">
+							<td>10.02.2024</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Fatima S.</span>
+								</div>
+								
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="C:\Users\ambul\OneDrive\Documents\AMBULA, SHARMAINE I\FINAL PROJECT_U&A\Pictures\Hijab pics\Solid Chiffon Scarf.jpg.png" alt="Product Image" class="product-image">
+									<span>x2</span>
+								</div>
+							</td>
+							<td>Hijab Pink</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag">Shipped</td>
+						</tr>						
+
+						<tr class="item1">
+							<td>27.02.2024</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Nur-aina L.</span>
+								</div>
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="C:\Users\ambul\OneDrive\Documents\AMBULA, SHARMAINE I\FINAL PROJECT_U&A\Pictures\Hijab pics\French Double-Side 2-Ply Spotted Novelty Jacquard Organza - Grey - Swatch.jpg" alt="Product Image" class="product-image">
+									<span>x1</span>
+								</div>
+							</td>
+							<td>Plain Chiffon</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag">Shipped</td>
+						</tr>>
+		
+						<tr class="item1">
+							<td>14.09.2022</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Indira U.</span>
+								</div>
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="C:\Users\ambul\OneDrive\Documents\AMBULA, SHARMAINE I\FINAL PROJECT_U&A\Pictures\Hijab pics\Swiss Dot Cotton - Taupe Grey.jpg" alt="Product Image" class="product-image">
+									<span>x2</span>
+								</div>
+							</td>
+							<td>Hijab Black</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag">Shipped</td>
+						</tr>	
+						<tr class="item1">
+							<td>14.02.2023</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Sharmaine A.</span>
+								</div>
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="C:\Users\ambul\OneDrive\Documents\AMBULA, SHARMAINE I\FINAL PROJECT_U&A\Pictures\Hijab pics\Jazz Crepe Hijab - Beige.jpg" alt="Product Image" class="product-image">
+									<span>x2</span>
+								</div>
+							</td>
+							<td>Hijab Nude</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag">Shipped</td>
+						</tr> 
+						<tr class="item1">
+							<td>24.02.2024</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Fatima Alee J.</span>
+								</div>
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="C:\Users\ambul\OneDrive\Documents\AMBULA, SHARMAINE I\FINAL PROJECT_U&A\Pictures\Hijab pics\Oyster - Satin.jpg" alt="Product Image" class="product-image">
+									<span>x3</span>
+								</div>
+							</td>
+							<td>Hijab White</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag2">Pending</td>
+						</tr>	  
+						<tr class="item1">
+							<td>14.12.2024</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Fadzrie Y.</span>
+								</div>
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="C:\Users\ambul\OneDrive\Documents\AMBULA, SHARMAINE I\FINAL PROJECT_U&A\Pictures\Hijab pics\Musselin Sternblumen - Uni kakao.jpg" alt="Product Image" class="product-image">
+									<span>x2</span>
+								</div>
+							</td>
+							<td>Hijab Red</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag">Shipped</td>
+						</tr>
+						<tr class="item1">
+							<td>14.05.2024</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Mayleen O.</span>
+								</div>
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="C:\Users\ambul\OneDrive\Documents\AMBULA, SHARMAINE I\FINAL PROJECT_U&A\Pictures\Hijab pics\Viscose Jersey- Soft Beige.jpg" alt="Product Image" class="product-image">
+									<span>x2</span>
+								</div>
+							</td>
+							<td>Plain Hijab</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag">Shipped</td>
+						</tr>	  
+						<tr class="item1">
+							<td>14.07.2023</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Kianne M.</span>
+								</div>
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="path_to_your_product_image.jpg" alt="Product Image" class="product-image">
+									<span>x1</span>
+								</div>
+							</td>
+							<td>Hijab Blue</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag">Shipped</td>
+						</tr>		  
+						<tr class="item1">
+							<td>16.03.2024</td>
+							<td>
+								<div class="user-info">
+									<span class="avatar">
+										<i class="fas fa-user-circle"></i> <!-- Font Awesome user icon -->
+									</span>
+									<span class="username">Mars I.</span>
+								</div>
+							</td>
+							<td class="product-cell">
+								<div class="product-info">
+									<img src="C:\Users\ambul\OneDrive\Documents\AMBULA, SHARMAINE I\FINAL PROJECT_U&A\Pictures\Hijab pics\Printed Digital Tie and Dye Rust Quilted Fabric.jpg" alt="Product Image" class="product-image">
+									<span>x2</span>
+								</div>
+							</td>
+							<td>Hijab Gray</td>
+							<td>300</td>
+							<td>150</td>
+							<td class="label-tag2">Pending</td>
+						</tr>					
+						<!-- Additional rows go here -->
+					  </tbody>
+					</table>
+				  </div>
+			</div>
+			</div>
+		</div>
+	<script src="admin.js"></script> 
+</body> 
+</html>

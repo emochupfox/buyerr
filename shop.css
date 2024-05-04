@@ -1,0 +1,309 @@
+/* Applies general styling to the entire body */
+body {
+    flex: 0 0 30%; /* Sets flex properties */
+    margin: 0; /* Resets margin */
+    font-family: Arial, sans-serif; /* Sets font family */
+    height: fit-content; /* Adjusts height based on content */
+    width: fit-content; /* Adjusts width based on content */
+    background-color: #3E2D29; /* Sets background color */
+}
+
+/* Applies styling to the sections */
+section {
+    height: 100vh; /* Sets height to full viewport height */
+}
+
+/* Styling for bold text */
+b {
+    font-family: 'Times New Roman', Times, serif; /* Sets font family */
+    color: rgb(255, 255, 255); /* Sets text color */
+    font-size: 200%; /* Sets font size */
+    text-size-adjust: 10%; /* Adjusts text size */
+}
+/* Styling for header */
+header {
+    background-color: transparent; /* Sets background color */
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Spaces items evenly */
+    flex-direction: row; /* Arranges items horizontally */
+    color: #fff; /* Sets text color */
+    padding: 20px; /* Adds padding */
+    position: sticky; /* Sticks header to the top */
+    top: 0; /* Aligns to the top */
+    z-index: 1000; /* Sets z-index */
+}
+
+/* Styling for anchor tags */
+a {
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styling for logo */
+.logo {
+    color: #fff; /* Sets text color */
+    font-size: 100%; /* Sets font size */
+    text-size-adjust: 50%; /* Adjusts text size */
+    margin-right: auto; /* Aligns logo to the left */
+    padding-top: 10%; /* Adds top padding */
+}
+
+/* Styling for anchor tags */
+a.logo {
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styling for left and right icons */
+.left-icons, .right-icons {
+    display: flex; /* Uses flexbox layout */
+    list-style: none; /* Removes default list style */
+    padding: 0; /* Resets padding */
+    padding-top: 10%; /* Adds top padding */
+    margin: 0; /* Resets margin */
+    font-size: large; /* Sets font size */
+}
+
+/* Styling for left icons */
+.left-icons {
+    margin-right: 0%; /* Aligns icons to the right */
+    justify-content: left;
+}
+
+/* Styling for each item in left and right icons */
+.left-icons li {
+    display: flex; /* Uses flexbox layout */
+    margin-top: 10px; /* Adds right margin */
+}
+
+/* Styling for search bar */
+.search-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+}
+
+/* Styling for search input */
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    height: 10px;
+    width: 500px;
+}
+
+/* Styling for search button */
+.search-container button {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* Styling for search icon */
+.search-container button i {
+    font-size: 18px;
+}
+
+/* Styling for search button hover */
+.search-container button:hover {
+    background-color: #3E2D29; /* Changes background color on hover */
+}
+
+/* Styling for font awesome icons */
+.fas {
+    color: white; /* Sets text color */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styling for right icons */
+.right-icons {
+    margin-left: auto; /* Aligns icons to the left */
+    padding-top: 10%; /* Adds top padding */
+    padding-right: 10px; /* Adjust padding to align with search bar */
+}
+
+/* Styling for each item in right icons */
+.right-icons li {
+    display: flex; /* Uses flexbox layout */
+    margin-left: 20px; /* Adds left margin */
+    font-size: large; /* Sets font size */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the title */
+.title {
+    display: flex;
+    transform: translate(1%, 100%);
+    color: #ccc;
+    text-align: left;
+    padding: 5px;
+    background-color:#3E2D29;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.255);
+    
+}
+
+.product-list {
+    display: flex;
+    width: 120%;
+    height: 70%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    flex-direction: row;
+    flex-basis: 20%;
+    width: 200%;
+    height: auto; /* Set the initial size to 30% */
+    background-color: #3E2D29;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 0px; /* Matches login/register page */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 280px;
+    border-radius: 0px; /* Matches login/register page */
+}
+
+.product h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    justify-content: center;
+    color: #bb877a; /* Darker pink */
+}
+
+.product p {
+    margin: 5px 0;
+    color: #bb877a; /* Darker pink */
+}
+
+.product button {
+    background-color: #bb877a; /* Darker pink */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #bb877a; /* Darker pink on hover */
+}
+
+.formal {
+    display: flex;
+    transform: translate(1%, -30%);
+    color: #ccc;
+    text-align: left;
+    padding: 5px;
+    background-color:#3E2D29;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.255);
+    
+}
+
+.casual {
+    display: flex;
+    transform: translate(1%, 2280%);
+    color: #ccc;
+    text-align: left;
+    padding: 5px;
+    background-color:#3E2D29;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.255);
+    
+}
+
+.fashion {
+    display: flex;
+    transform: translate(1%, -30%);
+    color: #ccc;
+    text-align: left;
+    padding: 5px;
+    background-color:#3E2D29;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.255);
+    
+}
+
+
+/* Style the pop-up form */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%; /* Center the form vertically */
+    left: 50%; /* Center the form horizontally */
+    transform: translate(-50%, -50%); /* Center the form precisely */
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Adjust the maximum width as needed */
+    width: 80%; /* 80% of the available width */
+}
+
+/* Style the form container, input fields, buttons, etc. */
+.form-container {
+    width: 100%;
+}
+
+.form-container label,
+.form-container input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container input {
+    width: calc(100% - 20px); /* Take up 100% width minus padding */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #bb877a; /* Darker pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #a66b61; /* Darker pink on hover */
+}
+
+.form-container .cancel {
+    background-color: #ccc;
+    margin-top: 0;
+}

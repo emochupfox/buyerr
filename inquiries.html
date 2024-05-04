@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>Enquiries</title>
+    <link rel="stylesheet" href="inquiries.css"> 
+	<script src="admin.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   
+
+</head> 
+
+<body> 
+
+	<header> 
+
+		<div class="logosec"> 
+			<div class="logo">U & A's Shop</div>
+			<a href="#" class="dashboard-link">Inquiries</a>
+		</div>
+
+		<div class="message"> 
+			<div class="circle"></div> 
+			<a href=" " title="Notification"><i class="fas fa-bell" style="color: black;"></i></a>
+
+			<div class="dp"> 
+				<a href=" " title="Profile"><i class="fas fa-user" style="color: black;"></i></a>
+			</div> 
+		</div> 
+
+	</header> 
+
+	<div class="main-container"> 
+		<div class="navcontainer"> 
+			<nav class="nav">
+				<div class="nav-upper-options"> 
+					<div class="nav-option option1"> 
+						<a href="admin.html">
+						<i class="fas fa-tachometer-alt"></i>
+						<h3> Dashboard</h3>
+						</a> 
+					</div> 
+
+					<div class="option2 nav-option">
+						<a href="avp.html">
+						<i class="fas fa-shopping-bag"></i>
+						<h3> Available Products </h3> 
+						</a>
+					</div> 
+
+					<div class="nav-option option7">
+						<a href="orders.html">
+							<i class="fas fa-shopping-basket"></i>
+							<h3>Orders</h3>
+						</a>
+					</div>
+
+					<div class="nav-option option3"> 
+						<a href="inquiries.html">
+						<i class="fas fa-envelope"></i>
+						<h3> Enquiries</h3> 
+						</a>
+					</div> 
+
+					<div class="nav-option option5"> 
+						<a href="reports.html">
+						<i class="fas fa-chart-line"></i>
+						</a>
+						<h3> Reports</h3> 
+					</div> 
+
+					<div class="nav-option option6"> 
+						<a href="new user.html">
+						<i class="fas fa-user-plus"></i>
+						<h3> New User </h3> 
+						</a>
+					</div> 
+				</div> 
+			</nav> 
+		</div> 
+		<div class="main"> 
+			
+            <div class="report-container"> 
+
+				<div class="enquiries-container">
+					
+					<div class="enquiry-grid">
+						<div class="enquiry-box product-enquiry">
+							<h3 class="enquiry-type">Product Availability</h3>
+							<p class="enquiry-info">Hi, I'm interested in purchasing the XYZ product. Can you please confirm if it's currently available?</p>
+							<div class="enquiry-details">
+								<p class="enquiry-date">Date: April 23, 2024</p>
+								<p class="enquiry-customer">Customer: John Doe</p>
+								<p class="enquiry-status">Status: Pending</p>
+							</div>
+						</div>
+						<div class="enquiry-box shipping-enquiry">
+							<h3 class="enquiry-type">Shipping Inquiry</h3>
+							<p class="enquiry-info">Hello, I placed an order last week and haven't received any updates regarding the shipment. Can you provide status?</p>
+							<div class="enquiry-details">
+								<p class="enquiry-date">Date: April 23, 2024</p>
+								<p class="enquiry-customer">Customer: John Doe</p>
+								<p class="enquiry-status">Status: Pending</p>
+							</div>							
+						</div>
+						<div class="enquiry-box payment-enquiry">
+							<h3 class="enquiry-type">Payment Issue</h3>
+							<p class="enquiry-info">I encountered an error while trying to make a payment. Can you assist me in resolving this issue?</p>
+							<div class="enquiry-details">
+								<p class="enquiry-date">Date: April 23, 2024</p>
+								<p class="enquiry-customer">Customer: John Doe</p>
+								<p class="enquiry-status">Status: Pending</p>
+							</div>						
+						</div>
+						<div class="enquiry-box general-enquiry">
+							<h3 class="enquiry-type">General Question</h3>
+							<p class="enquiry-info">I have a question about your return policy. Can you provide more information?</p>
+							<div class="enquiry-details">
+								<p class="enquiry-date">Date: April 23, 2024</p>
+								<p class="enquiry-customer">Customer: John Doe</p>
+								<p class="enquiry-status">Status: Pending</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+<!--                <div class="enquiries-section">
+                    <h2>Customer Enquiries</h2>
+                    <div class="enquiry">
+                        <div class="enquiries-container">
+							<div class="enquiry-form">
+								<h2 class="enquiry-heading">Submit Your Enquiry</h2>
+								<form>
+									<div class="form-group">
+										<label for="name">Your Name:</label>
+										<input type="text" id="name" name="name" required>
+									</div>
+									<div class="form-group">
+										<label for="email">Your Email:</label>
+										<input type="email" id="email" name="email" required>
+									</div>
+									<div class="form-group">
+										<label for="subject">Subject:</label>
+										<input type="text" id="subject" name="subject" required>
+									</div>
+									<div class="form-group">
+										<label for="message">Your Message:</label>
+										<textarea id="message" name="message" rows="5" required></textarea>
+									</div>
+									<button type="submit" class="submit-btn">Submit</button>
+								</form>
+							</div>
+							<div class="enquiry-list">
+								<h2 class="enquiry-heading">Recent Enquiries</h2>
+								<div class="enquiry-item">
+									<h3 class="enquiry-subject">Product Availability</h3>
+									<p class="enquiry-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p class="enquiry-date">Submitted: April 22, 2024</p>
+								</div>
+								<div class="enquiry-item">
+									<h3 class="enquiry-subject">Shipping Inquiry</h3>
+									<p class="enquiry-details">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<p class="enquiry-date">Submitted: April 20, 2024</p>
+								</div> 
+								<-- More recent enquiries can be added here 
+							</div>
+						</div> -->
+						
+</body> 
+</html>
+

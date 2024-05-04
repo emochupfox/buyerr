@@ -1,0 +1,140 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3E2D29; /* Nude Pink background */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #ffffff; /* Reddish-Pink text */
+}
+
+/* Main styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Align items vertically */
+}
+
+/* User profile styles */
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Align items vertically */
+}
+
+.user-info {
+    text-align: center; /* Center text within user-info */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.user-info i {
+    font-size: 80px; /* Adjust size of user icon */
+}
+
+.user-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #ffffff; /* Reddish-Pink text */
+}
+
+.user-info p {
+    font-size: 18px;
+    color: #ddcdcc; /* Lighter shade of Nude Pink text */
+    margin-bottom: 10px;
+}
+
+/* Order stats styles */
+/* Order stats styles */
+.order-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    text-align: center;
+    flex: 1; /* Distribute flex items equally */
+    margin-right: 20px; /* Add right margin for spacing between stat-box elements */
+}
+
+.stat-box:last-child {
+    margin-right: 0; /* Remove margin from the last stat-box to avoid extra spacing */
+}
+
+.stat-box .icon {
+    font-size: 36px;
+    color: #ffffff; /* Reddish-Pink text */
+}
+
+.stat-box .number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d0c2bf; /* Reddish-Pink text */
+}
+
+.stat-box .label {
+    font-size: 16px;
+    color: #ff7e75; /* Lighter shade of Nude Pink text */
+}
+
+
+/* Personal info styles */
+.personal-info {
+    width: 60%;
+    background-color: #3E2D29; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    text-align: left; /* Align text to the left */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.personal-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fefefe; /* Reddish-Pink text */
+}
+
+.personal-info p {
+    font-size: 16px;
+    color: #ebe1e1; /* Dark text */
+    margin-bottom: 10px;
+}
+
+.personal-info button {
+    background-color: #b1685c; /* Reddish-Pink button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.564);
+}
+
+.personal-info button:hover {
+    background-color: #3E2D29; /* Lighter shade of Reddish-Pink button */
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}

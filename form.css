@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3E2D29; /* Nude pink background */
+    color: #ffffff; /* Dark text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #4a332eac; /* Light pink container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.466);
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff; /* Pinkish header color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select,
+input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #a17272; /* Pinkish button color */
+    color: #f5f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3E2D29; /* Darker pink on hover */
+    box-shadow: #ffffff;
+}
+
+.form a {
+    padding: 12px 30px;
+    background-color: #ffffff; /* Pinkish button color */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #bb6e69; /* Darker pink on hover */
+    text-decoration: none;
+}
